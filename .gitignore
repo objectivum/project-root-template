@@ -16,8 +16,12 @@ nbproject/
 nbactions.xml
 nb-configuration.xml
 
+# Remember to override the npm settings (with a custom .npmignore) to include dist/ if publishing to npm
+# (see https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/)
 bin/
+lib/
 dist/
+build/
 target/
 node_modules/
 **/src/_includes/css
@@ -25,11 +29,12 @@ node_modules/
 .flattened-pom.xml
 dependency-reduced-pom.xml
 
-# Unit test reports
+# Test reports (unit, etc.)
 TEST*.xml
+coverage
 
 log/
-*.log*
+*.log
 
 rebel*
 *.cache
