@@ -3,38 +3,55 @@
 
 # See https://stackoverflow.com/questions/41761128/are-leading-asterisks-redundant-in-gitignore-path-matching-syntax
 
-.idea/
+### IntelliJ IDEA ###
+.idea
 *.iml
+*.ipr
 *.iws
 
-.settings/
+### Eclipse/STS ###
+.apt_generated
 .buildpath
 .classpath
+.factorypath
 .project
+.settings
+.springBeans
+.sts4-cache
 
-nbproject/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 nbactions.xml
 nb-configuration.xml
 
-# Remember to override the npm settings (with a custom .npmignore) to include dist/ if publishing to npm
-# (see https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/)
+### VS Code ###
+.vscode/
+
 bin/
-lib/
 dist/
-build/
 target/
 node_modules/
 **/src/_includes/css
+!**/src/main/**/target/
+!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+HELP.md
 
 .flattened-pom.xml
 dependency-reduced-pom.xml
 
-# Test reports (unit, etc.)
+# Unit test reports
 TEST*.xml
-coverage
 
 log/
-*.log
+*.log*
 
 rebel*
 *.cache
